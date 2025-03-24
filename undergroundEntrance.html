@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normal.css">
+    <title>Sackgasse</title>
+</head>
+<body>
+    <h1>Sackgasse</h1>
+    <img src="img/deadend.png" alt="Sackgasse">
+    <p>
+        Du Trittst um den ecken und befindest dich nun in einer sackgasse.
+        Rechts von dir ist eine tür. Als du probierst sie zu öffnen,
+        merkst du, dass sie geschlossen ist und jemand sagt von hinter der tür
+        in einer monotonen stimme <span class="dialogue">"Passwort?"</span>.
+    </p>
+    <ul>
+        <li><a href="index.html">Kehre zurück</a>
+    </ul>
+</body>
+<script>
+    var pressed = [];
+    document.onkeydown = function (e) {
+        pressed.push(e.key);
+        while (pressed.length > 8) {
+            pressed.shift();
+        }
+        if (pressed.join("") == "passwort") {
+            location.href = "secret.html";
+        }
+    };
+</script>
+</html>
