@@ -9,6 +9,7 @@ h1 {
 table, th, td {
     border: solid black 2px;
     border-collapse: collapse;
+    padding: 5px;
 }
 
 .dialogue {
