@@ -1,14 +1,9 @@
 body {
-    background-color: #f39f27;
+    background-color: #00d000;
 }
 
 h1 {
     font-size: 3em;
-}
-
-table, th, td {
-    border: solid black 2px;
-    border-collapse: collapse;
 }
 
 .dialogue {
@@ -26,6 +21,5 @@ table, th, td {
 }
 
 #specialtitle {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
+    font-style: italic;
 }
